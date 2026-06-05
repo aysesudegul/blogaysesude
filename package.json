@@ -1,0 +1,14 @@
+{
+  "name": "blogaysesude",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A clean personal blog and portfolio website for an aspiring Business Analyst.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node --check server.mjs && node --check src/main.js",
+    "preview": "node server.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

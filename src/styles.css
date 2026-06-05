@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 122px;
 }
 
 body {
@@ -42,6 +43,10 @@ a {
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+[id] {
+  scroll-margin-top: 122px;
 }
 
 .site-header {
@@ -260,7 +265,6 @@ nav a:hover,
 }
 
 .section-heading h2,
-.cv-intro h2,
 .contact-section h2 {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
@@ -271,7 +275,6 @@ nav a:hover,
 }
 
 .section-heading p,
-.cv-intro p,
 .contact-section p {
   max-width: 480px;
   margin: 0;
@@ -470,18 +473,6 @@ nav a:hover,
   line-height: 1.55;
 }
 
-.cv-section {
-  display: grid;
-  grid-template-columns: 0.7fr 1fr;
-  gap: 56px;
-  align-items: start;
-}
-
-.cv-intro {
-  position: sticky;
-  top: 112px;
-}
-
 .large-icon {
   width: 46px;
   height: 46px;
@@ -489,62 +480,6 @@ nav a:hover,
   background: var(--teal-soft);
   color: var(--teal);
   font-size: 0.92rem;
-}
-
-.cv-intro h2 {
-  margin-top: 18px;
-}
-
-.cv-intro p {
-  margin-top: 20px;
-}
-
-.timeline {
-  display: grid;
-  gap: 14px;
-}
-
-.timeline-item {
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--paper);
-}
-
-.timeline-item span {
-  color: var(--coral);
-  font-size: 0.82rem;
-  font-weight: 820;
-  text-transform: uppercase;
-}
-
-.timeline-item h3 {
-  margin: 10px 0 0;
-  font-size: 1.34rem;
-}
-
-.timeline-item p {
-  margin: 10px 0 0;
-  color: var(--muted);
-  line-height: 1.58;
-}
-
-.skill-strip {
-  grid-column: 1 / -1;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding-top: 2px;
-}
-
-.skill-strip span {
-  padding: 10px 12px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--paper);
-  color: var(--graphite);
-  font-size: 0.9rem;
-  font-weight: 720;
 }
 
 .contact-section {
@@ -603,7 +538,6 @@ nav a:hover,
 
   .hero,
   .articles-layout,
-  .cv-section,
   .contact-section {
     grid-template-columns: 1fr;
   }
@@ -623,10 +557,6 @@ nav a:hover,
 
   .reading-panel {
     min-height: 0;
-  }
-
-  .cv-intro {
-    position: static;
   }
 
   .contact-actions {
